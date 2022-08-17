@@ -1,0 +1,48 @@
+.address-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #dad3f8; */
+  background: #ffffff;
+}
+.contaibar{
+  padding: 40px 50px 40px 40px;
+  border-radius: 12px;
+  background-color: white;
+  max-width: 960px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin: 0 20px;
+}
+.contaibar .title{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  /* margin-left: 50px; */
+}
+.btndeleteaddr u{
+  color: var(--bs-link-color);
+  cursor: pointer;
+}
+.btncancledelete{
+  color: var(--bs-link-color);
+  cursor: pointer;
+}
+/* .manage-addr input[type="radio"]{
+  display: none;
+} */
+.button-operator .operator{
+  display: none;
+}
+.button-operator .cancledelete{
+  display: block;
+}
+#cancledelete:checked ~ .button-operator .cancledelete,
+#deleteaddr:checked ~ .button-operator .deleteaddr
+{
+  display: block;
+}
+#deleteaddr:checked ~ .button-operator .cancledelete{
+  display: none;
+}

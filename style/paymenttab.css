@@ -1,0 +1,114 @@
+.payments-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #dad3f8; */
+  background: #ffffff;
+  height: 550px;
+}
+
+.containar{
+  padding: 40px 50px 40px 40px;
+  border-radius: 12px;
+  background-color: white;
+  max-width: 960px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin: 0 20px;
+  height: 550px;
+}
+
+.containar .title{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  /* margin-left: 50px; */
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.containar .content .list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 38%;
+  margin-right: 50px;
+  /* margin-left: 50px; */
+}
+.content .list label{
+  height: 60px;
+  /* background: red; */
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 12px;
+  line-height: 60px;
+  cursor: pointer;
+  padding-left: 25px;
+  color:#333;
+  z-index: 12;
+  transition: all 0.5s ease;
+}
+.content .list label:hover{
+  color: #d60606;
+}
+#credit:checked ~ .list .credit,
+#transfer:checked ~ .list .transfer,
+#cash:checked ~ .list .cash,
+#installment:checked ~ .list .installment{
+  color: #fff;
+}
+
+.content .indicator{
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #d60606;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+#credit:checked ~ .list .indicator{
+  top: 0;
+}
+#transfer:checked ~ .list .indicator{
+  top: 60px;
+}
+#cash:checked ~ .list .indicator{
+  top: 120px;
+}
+#installment:checked ~ .list .indicator{
+  top: 180px;
+}
+.containar input[type="radio"]{
+  display: none;
+}
+.containar .content .form-content{
+  width: 80%;
+  height: 100%;
+}
+.content .form-content .formpay{
+  display: none;
+}
+.content .form-content .credit{
+  display: block;
+}
+#credit:checked ~ .form-content .credit,
+#transfer:checked ~ .form-content .transfer,
+#cash:checked ~ .form-content .cash,
+#installment:checked ~ .form-content .installment{
+  display: block;
+}
+#transfer:checked ~ .form-content .credit,
+#cash:checked ~ .form-content .credit,
+#installment:checked ~ .form-content .credit{
+  display: none;
+}
+
+.content .form-content form{
+  margin-right: 50px;
+}

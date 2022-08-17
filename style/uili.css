@@ -1,0 +1,29 @@
+.navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+.navcontainer li { margin: 0 0 .2em 0; }
+.navcontainer a
+{
+display: block;
+color: #ee0000;
+text-decoration: none;
+}
+
+.navcontainer a:hover
+{
+color: darkblue;
+}
+
+#active a
+{
+display: block;
+color: #FFF;
+
+width: 9em;
+
+text-decoration: none;
+}
